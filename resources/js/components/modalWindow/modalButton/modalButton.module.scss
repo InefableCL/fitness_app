@@ -1,0 +1,24 @@
+.modalButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:29px;
+}
+
+.modalButton__btn {
+  width: 382px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background: #FF6118;
+  border-radius: 20px;
+  padding: 16px 0;
+  margin: 0 auto;
+}
+
+.modalButton__btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

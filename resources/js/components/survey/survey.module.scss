@@ -1,0 +1,308 @@
+.block__disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.survey {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__wrap_block {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__top {
+    width: 100%;
+    background: url("../../images/survey/oneAndTwo.jpg") center / contain no-repeat #000;
+    background-size: auto;
+    color: #ffffff;
+    padding: 35px 0 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FF6118;
+    margin-bottom: 30px;
+  }
+
+  &__top_block {
+
+    & label {
+      margin-top: 30px;
+    }
+  }
+
+  &__inp {
+    border-bottom: 2px solid #FF6118;
+    width: 195px;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  &__center {
+    width: 100%;
+    background: url("../../images/survey/survey-3.png") top / contain no-repeat,
+    #fff url("../../images/survey/survey-4.png") bottom / contain no-repeat;
+    background-size: auto;
+    color: #000;
+    padding: 20px 0 20px;
+  }
+
+  &__bottom {
+    background: url("../../images/survey/survey-5.png") center / contain no-repeat #000;
+    color: #ffffff;
+    padding: 20px 0 77px;
+  }
+
+  &__wrap1 {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    width: 108px;
+
+    & h3 {
+      font-size: 18px;
+      line-height: 27px;
+      text-align: left;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 37px;
+    margin-left: 30px;
+
+    &_gender {
+      flex-direction: row;
+    }
+
+    & label:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    & label {
+      font-size: 18px;
+      line-height: 27px;
+      text-align: left;
+    }
+
+    & label input {
+      margin-right: 17px;
+    }
+
+    & p {
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000000;
+    }
+  }
+
+  &__btn {
+    max-width: 447px;
+    padding: 20px 30px;
+    color: #fff;
+    background: #FF6118;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+
+  &__span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+
+    &_black {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__spanMin {
+    margin-right: 9px;
+  }
+
+  &__spanMax {
+    margin-left: 9px;
+  }
+}
+
+.span__range {
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.survey__inpRange {
+  width: 195px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    background: #FF6118;
+    border: #FF6118;
+    border-radius: 10px/100%;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.survey__inpRange_white {
+  background-color: #000;
+
+  &::-webkit-slider-runnable-track {
+    height: 1px;
+    border: 2px solid #FFFFFF;
+  }
+}
+
+.survey__inpRange_black {
+  background-color: #fff;
+
+  &::-webkit-slider-runnable-track {
+    height: 1px;
+    border: 2px solid #FF6118;
+  }
+}
+
+
+//Стилизация radio
+.radio {
+  padding-left: 36px;
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__box {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-left: -36px;
+  margin-top: 3px;
+}
+
+.radio__box_white {
+  background-image: url(../../images/survey/radioWhite.png);
+}
+.radio__box_black {
+  background-image: url(../../images/survey/radioBlack.png);
+}
+//checked
+.radio__input:checked + .radio__box {
+  background-image: url(../../images/survey/radioOrange.png);
+}
+//* стили при наведении курсора на radio */
+.radio:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+//Стилизация checkbox
+.check {
+  padding-left: 36px;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  background-image: url(../../images/survey/checkMarkOff.png);
+  margin-left: -36px;
+  margin-top: 3px;
+}
+//checked
+.check__input:checked + .check__box {
+  height: 22px;
+  margin-top: 0;
+  background-image: url(../../images/survey/checkMarkOn.png);
+}
+//* стили при наведении курсора на checkbox */
+.check:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+//Стилизация М Ж
+.survey__item_gender .survey__gender:first-child {
+  margin-right: 17px;
+  padding-right: 17px;
+  border-right: 2px solid #FFFFFF;
+}
+
+.survey__gender>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.survey__gender>input:hover+span:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.survey__gender>input:checked + span {
+  color: #FF6118;
+}

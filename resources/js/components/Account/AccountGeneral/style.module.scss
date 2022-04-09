@@ -1,0 +1,90 @@
+.account-wrapper {
+    display: flex;
+    flex-flow: column;
+    height: calc(100vh - 95px);
+}
+
+.user-info {
+    display: flex;
+    max-width: 1140px;
+    padding: 0 80px;
+    margin: 20px auto 0;
+    align-items: center;
+}
+
+.user-name {
+    font-size: 36px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.user {
+    &__form {
+        width: 360px;
+        &-submit-btn {
+            width: 100%;
+            margin-top: 26px;
+            &:hover {
+                outline: 1px solid #FF6118;
+            }
+        }
+    }
+    &__image {
+        height: 100%;
+        &-wrapper { 
+            margin-right: 90px;
+            border-radius: 100%;
+            display: flex;
+            flex: 0 0 378px;
+            height: 378px;
+            width: 378px;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        &-edit-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            transition: opacity 0.25s;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 80px;
+            color: #3D3D3D;
+            background-color: rgba(196, 196, 196, 0.5);
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    &__input{
+       &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        &-label {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 80px;
+        }
+        &-field {
+            border-bottom: 2px solid #000;
+            max-width: 244px;
+            font-size: 24px;
+            font-weight: 400;
+            padding-left: 8px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
