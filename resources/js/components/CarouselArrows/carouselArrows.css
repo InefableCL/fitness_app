@@ -1,0 +1,19 @@
+.carousel__arrow {
+  margin-top: 25vh;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 72px;
+  color: #000;
+}
+.carousel__arrow:hover {
+  transition: 0.3s;
+  color: rgba(0, 0, 0, 0.856);
+}
+.carousel__arrow--left {
+  margin-left: 10vw;
+  margin-right: 20px;
+}
+.carousel__arrow--right {
+  margin-left: 20px;
+  margin-right: 10vw;
+}

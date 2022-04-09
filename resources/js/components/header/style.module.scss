@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0.9;
+  width: 100%;
+    &__logo {
+      margin-bottom: 8px;
+      margin-top: 24px;
+      &_text {
+        position: relative;
+        margin-right: 107px;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 60px;
+        color: #FF6118;
+        text-transform: uppercase;
+        transition: 0.2s;
+        &:hover {
+          color: #000000;
+        }
+        &:active {
+          color: #FF6118;
+        }
+        &::after {
+          content: "TrueFitness";
+          position: absolute;
+          left: -23px;
+          top: 40px;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 20px;
+          color: #000000;
+          text-transform: none;
+          transition: 0.2s;
+        }
+        &:hover:after {
+          color: #FF6118;
+        }
+        &:active:after {
+          color: #000000;
+        }
+      }
+    }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    &_item {
+      margin-right: 139px;
+      font-size: 20px;
+      line-height: 30px;
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active  {
+        opacity: 1;
+      }
+      &:last-child {
+        margin-right: 54px;
+      }
+    }
+  }
+  &__special_version {
+    position: relative;
+    top: 24px;
+    width: 40px;
+    height: 23px;
+    cursor: pointer;
+  }
+}

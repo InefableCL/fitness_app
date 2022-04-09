@@ -1,0 +1,37 @@
+.box {
+  padding: 100px 0;
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+  background: url("../../images/bg/man-rope.png") center / contain no-repeat #000;
+}
+
+.form {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+}
+
+.form-item {
+  max-width: 447px;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 30px;
+
+  .big {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bold;
+  }
+
+  .highlight {
+    text-transform: uppercase;
+  }
+}

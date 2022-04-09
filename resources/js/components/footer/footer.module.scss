@@ -1,0 +1,45 @@
+.footer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 70px;
+
+    &_black {
+        background-color: #000;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 44px;
+        color: #000000;
+        margin-bottom: 30px;
+
+        &_while {
+            color: #fff;
+        }
+    }
+}
+
+.socialNetwork__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socialNetwork__item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.socialNetwork__link svg {
+    fill: #000;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+.socialNetwork__link_white svg {
+    fill: #fff;
+    stroke: #000;
+}
